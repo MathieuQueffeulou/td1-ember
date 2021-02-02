@@ -1,5 +1,15 @@
 export default class Services {
-  constructor(datas,promos) {
+  services = [];
+
+  constructor(serv) {
+    this.services = serv;
+  }
+
+  get countActive() {
+    return this.services.filterBy('active', true).length;
+  }
+
+  get sumActive() {
 
   }
 }
