@@ -1,7 +1,20 @@
 {{page-title "TD1"}}
 
 {{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
+<select id="monselect" multiple>
+  <option value="id1">Valeur 1</option>
+  <option value="id2" selected>Valeur 2</option>
+  <option value="id3">Valeur 3</option>
+</select><br/><br/>
+
+<label for="story">Produits disponibles :</label><br/>
+
+<textarea id="story" name="story" rows="5" cols="33"></textarea><br/><br/>
+
+<label for="story">Produits selectionnés :</label><br/>
+
+<textarea id="story" name="story" rows="5" cols="33"></textarea>
+
 {{!-- Feel free to remove this! --}}
 
 {{outlet}}
