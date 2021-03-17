@@ -11,4 +11,5 @@ Router.map(function () {
     this.route('add');
     this.route('addProduct');
   });
+  this.route('index');
 });
