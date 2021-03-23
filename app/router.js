@@ -12,4 +12,5 @@ Router.map(function () {
     this.route('addProduct');
   });
   this.route('index');
+  this.route('Abstractroute');
 });
