@@ -13,4 +13,5 @@ Router.map(function () {
   });
   this.route('index');
   this.route('Abstractroute');
+  this.route('board');
 });
