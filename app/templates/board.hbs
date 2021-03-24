@@ -1,11 +1,46 @@
 {{page-title "MyBoard"}}
 <div class="ui green segment">
-  <span class="ui label">{{@model.employee.email}}</span>
-  <button class="ui black button" {{action "logout"}}>
-    Logout
-  </button>
+  <div class="ui secondary menu">
+    <div class="ui right item">
+      <span class="ui label">{{@model.employee.email}}</span>
+      <button class="ui black button" {{action "logout"}}>
+        Logout
+      </button>
+    </div>
+  </div>
 </div>
-<h2>Orders</h2>
+
+<div class="ui basic inverted black segment temp">
+  <h2>Orders</h2>
+</div>
+
+<div class="ui grid container">
+  <table class="ui celled table">
+    <tr class="center aligned">
+      <th>Client</th>
+      <th>Date de commande</th>
+      <th>Status</th>
+      <th>Nombre de colis</th>
+      <th>A payé</th>
+      <th>Quantité</th>
+      <th>Quantité manquant</th>
+    </tr>
+    {{#each @model as |val|}}
+      <tr class="center aligned">
+        <td>{{val.user.name}}</td>
+        <td>{{val.dateCreation}}</td>
+        <td>{{val.status}}</td>
+        <td>{{val.amount}}</td>
+        <td>{{val.toPay}}</td>
+        <td>{{val.itemsNumber}}</td>
+        <td>{{val.missingNumber}}</td>
+      </tr>
+    {{/each}}
+  </table>
+</div>
+
+
+
 <ul>
   {{#each @model.orders as |order|}}
     <li>
