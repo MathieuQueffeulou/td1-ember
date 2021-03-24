@@ -15,8 +15,8 @@
   <div class="ui segment">
     <button {{action "AddSection"}} class="ui positive button">Créer une nouvelle section</button>
     <button {{action "AddProduct"}} class="ui positive button">Créer un nouveau produit</button>
-    <div class"ui grid container">
-      <table class"ui table">
+    <div class="ui grid container">
+      <table class="ui table">
         {{#each @model as |section|}}
           <tr>
             <td>{{section.name}}</td>

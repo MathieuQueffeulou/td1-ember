@@ -29,16 +29,16 @@
         <th>Quantité</th>
         <th>Quantité manquant</th>
       </tr>
-      {{#each @model as |val|}}
+      {{#each @model as |board|}}
         <tr class="center aligned">
-          <td>{{val.user.name}}</td>
+          <td>{{board.user.name}}</td>
           <td>{{moment-format val.dateCreation 'LLLL'}}</td>
-          <td>{{val.dateCreation}}</td>
-          <td>{{val.status}}</td>
-          <td>{{val.amount}}</td>
-          <td>{{val.toPay}}</td>
-          <td>{{val.itemsNumber}}</td>
-          <td>{{val.missingNumber}}</td>
+          <td>{{board.dateCreation}}</td>
+          <td>{{board.status}}</td>
+          <td>{{board.amount}}</td>
+          <td>{{board.toPay}}</td>
+          <td>{{board.itemsNumber}}</td>
+          <td>{{board.missingNumber}}</td>
         </tr>
       {{/each}}
     </table>
