@@ -28,7 +28,7 @@ export default class SectionRoute extends Abstractroute {
 
 
   @action
-  addProduct() {
+  addSection() {
 
   }
 
