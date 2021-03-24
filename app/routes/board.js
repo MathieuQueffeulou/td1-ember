@@ -13,4 +13,16 @@ export default class BoardRoute extends Abstractroute {
       })
     }
   }
+
+  @action
+  logout() {
+    this.userAuth.logout();
+    this.transitionTo('index');
+  }
+
+  @action
+  getStore() {
+    this.transitionTo('section');
+  }
+    
 }
