@@ -1,2 +1,14 @@
 {{page-title "Order"}}
+<h1> COMMANDE </h1>
+
+<ul>
+      <li>{{@model.order.dateCreation}}
+      {{#each @model.order.orderdetails as |orderdetail|}}
+        {{orderdetail.quantity}}
+      {{/each}}
+    </li>
+  {{/each}}
+
+</ul>
+
 {{outlet}}

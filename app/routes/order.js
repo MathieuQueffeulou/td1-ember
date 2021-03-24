@@ -7,7 +7,6 @@ import RSVP from 'rsvp';
 export default class OrderRoute extends Abstractroute {
 
   model(param) {
-    this.redirect();
     let user = this.userAuth.user;
     if (user) {
       console.log(user.name);
@@ -16,5 +15,5 @@ export default class OrderRoute extends Abstractroute {
         employee: user,
       })
     }
-  }  
+  }
 }
