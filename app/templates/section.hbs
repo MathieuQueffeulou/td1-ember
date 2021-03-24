@@ -1,2 +1,31 @@
 {{page-title "Section"}}
+<div class="ui green segment">
+  <div class="ui grey">
+    <h1 class="ui grey inverted header">Sections</h1>
+  </div>
+  <div class="ui right item">
+    <button {{action "goBoard"}} class="ui positive button">Retour au Board</button>
+  </div>
+</div>
+
+
+
+<div class="ui container segment">
+  <h1>Section</h1>
+  <div class="ui segment">
+    <button {{action "AddSection"}} class="ui positive button">Créer une nouvelle section</button>
+    <button {{action "AddProduct"}} class="ui positive button">Créer un nouveau produit</button>
+    <div class"ui grid container">
+      <table class"ui table">
+        {{#each @model as |section|}}
+          <tr>
+            <td>{{section.name}}</td>
+          </tr>
+        {{/each}}
+      </table>
+    </div>
+  </div>
+</div>
+
+
 {{outlet}}

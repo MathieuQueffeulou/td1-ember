@@ -6,37 +6,43 @@
       <button class="ui black button" {{action "logout"}}>
         Logout
       </button>
+        <div class="ui right item">
+          <button {{action "goStore"}} class="ui positive button">Gestion du Store</button>
+        </div>
     </div>
   </div>
 </div>
 
-<div class="ui basic inverted black segment temp">
+<div class="ui basic inverted black segment">
   <h2>Orders</h2>
 </div>
 
-<div class="ui grid container">
-  <table class="ui celled table">
-    <tr class="center aligned">
-      <th>Client</th>
-      <th>Date de commande</th>
-      <th>Status</th>
-      <th>Nombre de colis</th>
-      <th>A payé</th>
-      <th>Quantité</th>
-      <th>Quantité manquant</th>
-    </tr>
-    {{#each @model as |val|}}
+<div class="ui container" >
+  <div class="ui grid container">
+    <table class="ui celled table">
       <tr class="center aligned">
-        <td>{{val.user.name}}</td>
-        <td>{{val.dateCreation}}</td>
-        <td>{{val.status}}</td>
-        <td>{{val.amount}}</td>
-        <td>{{val.toPay}}</td>
-        <td>{{val.itemsNumber}}</td>
-        <td>{{val.missingNumber}}</td>
+        <th>Client</th>
+        <th>Date de commande</th>
+        <th>Status</th>
+        <th>Nombre de colis</th>
+        <th>A payé</th>
+        <th>Quantité</th>
+        <th>Quantité manquant</th>
       </tr>
-    {{/each}}
-  </table>
+      {{#each @model as |val|}}
+        <tr class="center aligned">
+          <td>{{val.user.name}}</td>
+          <td>{{moment-format val.dateCreation 'LLLL'}}</td>
+          <td>{{val.dateCreation}}</td>
+          <td>{{val.status}}</td>
+          <td>{{val.amount}}</td>
+          <td>{{val.toPay}}</td>
+          <td>{{val.itemsNumber}}</td>
+          <td>{{val.missingNumber}}</td>
+        </tr>
+      {{/each}}
+    </table>
+  </div>
 </div>
 
 
