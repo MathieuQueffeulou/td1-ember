@@ -1,4 +1,4 @@
-Le travail final se trouve sur la branche 7, et se nomme TD6.
+Le travail final se trouve sur la branche 7, et se trouve dans le TD6.
 C'est dans ce dossier que réside l'évaluation final.
 
 Il y a des erreurs lors de la compilation que je n'arrive plus à gérer.
