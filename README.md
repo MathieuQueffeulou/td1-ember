@@ -5,7 +5,7 @@ Le travail final se trouve sur la branche 7, et se trouve dans le TD6.
 C'est dans ce dossier que réside l'évaluation final.
 
 Il y a des erreurs lors de la compilation que je n'arrive plus à gérer.
-Quoi qu'il en soit, le code du travail est présent et je vous invite a aller le voir.
+Quoi qu'il en soit, le code du travail est présent et je vous invite à aller le voir.
 
 Bien cordialement,
 en ce dernier rendu de ember js.
