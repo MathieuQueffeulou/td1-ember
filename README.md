@@ -1,3 +1,6 @@
+L'objectif de ce travail est de créer une application web permettant de gérer une m'activité de la ve,te à emporter.
+Il faut permettre au commerçant de gérer leur entreprise en interne, non seulement du magasin mais aussi des commandes et de leurs retraits.
+
 Le travail final se trouve sur la branche 7, et se trouve dans le TD6.
 C'est dans ce dossier que réside l'évaluation final.
 
